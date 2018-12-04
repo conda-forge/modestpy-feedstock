@@ -5,9 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  fn: modestpy-{{ version }}.tar.gz
+  fn: modest-py-v.{{ version }}.tar.gz
   url: https://github.com/sdu-cfei/modest-py/archive/v.{{ version }}.tar.gz
-  sha256: 687d8372540aeeb901c99dc345a1441a0c5d15874aaa365e1754353f90dca075
+  sha256: 0C49FA5B5D4BFA6392BE9DBD87673782361DDC63D43C4775BF6C54B0BE6B70E4
 
 build:
   noarch: python
@@ -33,6 +33,7 @@ test:
     - modestpy.estim
     - modestpy.estim.ga
     - modestpy.estim.ps
+    - modestpy.estim.scipy
     - modestpy.fmi
     - modestpy.utilities
 
