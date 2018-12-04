@@ -1,4 +1,4 @@
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: modestpy
@@ -6,7 +6,7 @@ package:
 
 source:
   fn: modestpy-{{ version }}.tar.gz
-  url: https://github.com/sdu-cfei/modest-py/archive/v{{ version }}.tar.gz
+  url: https://github.com/sdu-cfei/modest-py/archive/v.{{ version }}.tar.gz
   sha256: 687d8372540aeeb901c99dc345a1441a0c5d15874aaa365e1754353f90dca075
 
 build:
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - jschueller
+    - krzysztofarendt
