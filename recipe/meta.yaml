@@ -7,7 +7,7 @@ package:
 source:
   fn: modest-py-v.{{ version }}.tar.gz
   url: https://github.com/sdu-cfei/modest-py/archive/v.{{ version }}.tar.gz
-  sha256: 0C49FA5B5D4BFA6392BE9DBD87673782361DDC63D43C4775BF6C54B0BE6B70E4
+  sha256: 0c49fa5b5d4bfa6392be9dbd87673782361ddc63d43c4775bf6c54b0be6b70e4
 
 build:
   noarch: python
