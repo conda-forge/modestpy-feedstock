@@ -1,4 +1,4 @@
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: modestpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: modest-py-v.{{ version }}.tar.gz
   url: https://github.com/sdu-cfei/modest-py/archive/v.{{ version }}.tar.gz
-  sha256: 0c49fa5b5d4bfa6392be9dbd87673782361ddc63d43c4775bf6c54b0be6b70e4
+  sha256: cb88a8d1fac906f53169aacd66aec2d49fb01b78b4db1c79656b371ad70bea27
 
 build:
   noarch: python
