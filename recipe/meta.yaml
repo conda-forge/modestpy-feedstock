@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -46,9 +46,9 @@ requirements:
   host:
     - pip
     - setuptools
-    - python
+    - python {{ python_min }}
   run:
-    - python
+    - python >={{ python_min }}
     - scipy
     - pandas
     - matplotlib-base
@@ -56,6 +56,8 @@ requirements:
     - pyfmi
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - modestpy
     - modestpy.estim
