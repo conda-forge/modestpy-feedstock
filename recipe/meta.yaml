@@ -29,6 +29,8 @@ requirements:
     - pyfmi
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - modestpy
     - modestpy.estim
